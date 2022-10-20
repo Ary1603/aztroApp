@@ -20,12 +20,9 @@ app.use(express.json({
 
 app.use(cors())
 
-app.post('/aztro', (req, res) => {
-    res.send('Holaaaaa desde aqui')
-}
          
 
-app.post(' 0.0.0.0:7138/aztro', (req, res) => {
+app.post('/aztro', (req, res) => {
     console.log(req.body.sign)
     let sign = req.body.sign
     const options = {
