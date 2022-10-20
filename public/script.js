@@ -13,7 +13,7 @@ function Enter(value) {
         console.log(signJSON)
 
         //Mandar los datos al backend
-        fetch('http://localhost:8000/aztro', {
+        fetch('https://aztroapp-production.up.railway.app/aztro', {
             method: "Post",
             body: signJSON
         }).then(res => res.json()).then(data => {
