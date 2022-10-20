@@ -25,7 +25,7 @@ app.post('/aztro', (req, res) => {
 }
          
 
-app.post('/aztro', (req, res) => {
+app.post(' 0.0.0.0:7138/aztro', (req, res) => {
     console.log(req.body.sign)
     let sign = req.body.sign
     const options = {
